@@ -4,6 +4,10 @@ app = "logs-shipper"
   port = 9598
   path = "/metrics"
 
+[[services]]
+  http_checks = []
+  internal_port = 8686
+
 [http_service]
   auto_stop_machines = false
   auto_start_machines = false
